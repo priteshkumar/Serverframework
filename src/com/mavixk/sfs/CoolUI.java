@@ -13,15 +13,19 @@ import javax.swing.SwingConstants;
 
 public class CoolUI {
 
-  static interface Button{
+  static interface Button {
+
     void render();
+
     void onClick();
   }
 
-  static class LinuxButton implements Button{
+  static class LinuxButton implements Button {
+
     JPanel panel = new JPanel();
     JFrame frame = new JFrame();
     JButton button;
+
     @Override
     public void render() {
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,7 +57,7 @@ public class CoolUI {
     }
   }
 
-  static class WebButton implements Button{
+  static class WebButton implements Button {
 
     @Override
     public void render() {
@@ -67,34 +71,39 @@ public class CoolUI {
     }
   }
 
-  static abstract class Dialog{
+  static abstract class Dialog {
+
     public abstract Button createButton();
-    public void renderWindow(){
+
+    public void renderWindow() {
       Button button = createButton();
       button.render();
     }
   }
 
-  static class LinuxDialog extends Dialog{
+  static class LinuxDialog extends Dialog {
+
     @Override
     public Button createButton() {
       return new LinuxButton();
     }
   }
 
-  static class WebDialog extends Dialog{
+  static class WebDialog extends Dialog {
+
     @Override
     public Button createButton() {
       return new WebButton();
     }
   }
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
     Dialog dialog = null;
-    if(System.getProperty("os.name").equals("Linux"))
+    if (System.getProperty("os.name").equals("Linux")) {
       dialog = new LinuxDialog();
-    else
+    } else {
       dialog = new WebDialog();
+    }
     dialog.renderWindow();
   }
 }
