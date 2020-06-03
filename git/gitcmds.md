@@ -22,12 +22,14 @@
  
 `git reset --mixed < commitid>` : reset current HEAD to given commit . all changes after commit are left untracked.
  
-`git reset --hard <commitid>` : reset current HEAD to given commit. all changes after that commit are removed.
-
+`git reset --hard <commitid>` : reset current HEAD to given commit. all changes after that commit are removed
 
 
 ### Git internals
-*Use below commands in git repo*
+
+Refer git object model [Git Object Model](https://thoughtbot.com/upcase/videos/git-object-model).
+
+***Use below commands inside git repo***
 
 `echo "code java" | git hash-object --stdin -w` : creates sha1 id for input and writes blob to .git/objects/
 
