@@ -23,3 +23,15 @@
 `git reset --mixed < commitid>` : reset current HEAD to given commit . all changes after commit are left untracked.
  
 `git reset --hard <commitid>` : reset current HEAD to given commit. all changes after that commit are removed.
+
+
+
+### Git internals
+*Use below commands in git repo*
+
+`echo "code java" | git hash-object --stdin -w` : creates sha1 id for input and writes blob to .git/objects/
+
+`git cat-file -t <sha1>` : tells the type of git object referred by sha1 e.g. blob/commit/tree
+
+`git cat-file -p <sha1>` : pretty prints the content of git object referred by sha1
+
