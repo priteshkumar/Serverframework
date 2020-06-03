@@ -37,3 +37,4 @@ Refer git object model [Git Object Model](https://thoughtbot.com/upcase/videos/g
 
 `git cat-file -p <sha1>` : pretty prints the content of git object referred by sha1
 
+`git count-objects` : tells total number of objects in .git
