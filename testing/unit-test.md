@@ -9,3 +9,8 @@
 - Isolated : used in mocking
 - Maintainable : simple clean code 
 - Trustworthy
+
+### Some caveats
+> Basic unit test case : independent of other unit test case
+
+> Good unit test case should cover all possible paths of code
