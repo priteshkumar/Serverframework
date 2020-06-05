@@ -14,3 +14,10 @@
 > Basic unit test case : independent of other unit test case
 
 > Good unit test case should cover all possible paths of code
+
+
+### Junit5
+
+> Junit5 is a testing framework which allows to write and run testcases .
+
+> Junit5 code sample(maven based) [TestJunit5](https://github.com/priteshkumar/TestJunit5).
