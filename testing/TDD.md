@@ -39,3 +39,24 @@
  
  > testcases should not share resources , it can lead to random failures.
  
+
+## Refactoring
+
+*It can have below possibilities or more :*
+
+`change variable name`
+
+`change method name`
+
+`split method into smaller ones`
+
+**Advantages**
+
+> Restructuring the code without affecting its functionality
+
+> Makes the code more readable 
+
+> More comprehensible and structured 
+
+>Increases maintainibility of code
+
