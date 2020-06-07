@@ -6,6 +6,7 @@
 
 
 ## Steps in TDD
+`It works on basic principle of write a test case , write code to pass test case`
 
 > write test cases
 
@@ -24,4 +25,17 @@
 > increases organisation/stability of code at some later point of time
 
 > converting requirements into test cases helps in analyzing design of software before code development
+ 
+ 
+ ## Requirements of a good testcase 
+ 
+ > it should have high code coverage ( > 95 %)
+ 
+ > multiple assertions for different aspects 
+ 
+ > should be able to catch bugs , if code break occurs later
+ 
+ > testcases should be independent , not dependent on run status of other testcases
+ 
+ > testcases should not share resources , it can lead to random failures.
  
