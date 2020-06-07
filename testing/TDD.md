@@ -60,3 +60,24 @@
 
 >Increases maintainibility of code
 
+
+**Refactoring Scenarios**
+
+> Change in requirements
+
+> Change in design
+
+> Old piece of code no longer needed/dead code
+
+
+**What to Refactor**
+
+> Code hard to understand
+
+> Repeated code , e.g. common db queries, mathematical functions
+
+> Variable names/method names to be more descriptive
+
+> Long methods 
+
+> Long classes 
