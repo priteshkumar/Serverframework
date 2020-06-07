@@ -81,3 +81,11 @@
 > Long methods 
 
 > Long classes 
+
+
+### Refactoring methods
+
+> **Extract class** : reduce long class to smaller by moving some methods/variables to another class
+
+> **Extract variable** : remove hardcoding of repeatedly used primitive value by creating a variable(e.g, static final etc)
+
