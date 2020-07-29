@@ -1,0 +1,70 @@
+﻿select count("Name") from city;
+
+
+select city."ID","Name" from city;
+
+
+select count(city."CountryCode"),country."Name" from city
+inner join country on city."CountryCode" = country."Code"
+group by country."Name"
+order by count(city."CountryCode") desc limit 1;
+
+
+
+select * from countrylanguage
+where "IsOfficial" = 'T' and "Percentage" between 80 and 90 and "Language" in ('Albanian','Spanish','French','Hindi');
+
+
+select "District", count("District") from city
+where "District" = 'Maharashtra'
+group by "District";
+
+
+
+select max("Population") from country;
+
+-- use subquery 
+select * from country
+where "Population" = (select max("Population") from country);
+
+
+
+
+select "Language", count("Language") from countrylanguage
+where "IsOfficial" = 'T'
+group by "Language"
+order by count("Language") desc; 
+
+
+
+select "Code" from country
+where "Continent" = 'North America';
+
+
+select count("Name") from city 
+where "CountryCode" 
+in (select "CountryCode" from countrylanguage
+where "CountryCode" in (select "Code" from country where "Continent" = 'North America')  and "Language" = 'English' and "IsOfficial" = 'T');
+
+
+
+
+select "Name","Population" from city
+where "Name" in ('Phoenix','Los Angeles','Chicago','New York')
+order by "Population" desc;
+
+
+
+-- good way of finding rows with any column having null value
+select count(*) from country
+where not(country is not null); 
+
+
+select * from country
+where "Name" ilike 'I%A%';
+
+
+select "Continent",sum("SurfaceArea") from country
+group by "Continent"
+order by sum("SurfaceArea") desc;
+

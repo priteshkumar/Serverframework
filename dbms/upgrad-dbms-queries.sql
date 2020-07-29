@@ -1,0 +1,1 @@
+﻿select count(city.Name) from city;
