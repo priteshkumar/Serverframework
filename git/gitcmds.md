@@ -44,3 +44,16 @@ Refer git object model [Git Object Model](https://thoughtbot.com/upcase/videos/g
 ### Branch Deletion cmds
 
 > Refer gir branch deletion link https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+
+
+### Git stash cmd
+
+> git stash  : this cmd creates entry of current working directory/index and pushes to stash with HEAD set to clean state
+
+> git stash only records tracked files in git. 
+
+> Use --include-untracked to add untracked files in stash
+
+> git stash pop 0 : applies stash entry stash@{0} to current branch HEAD
+
+> use --keep-index flag to avoid adding staged files in stash entry
