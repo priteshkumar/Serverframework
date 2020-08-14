@@ -57,3 +57,8 @@ Refer git object model [Git Object Model](https://thoughtbot.com/upcase/videos/g
 > git stash pop 0 : applies stash entry stash@{0} to current branch HEAD
 
 > use --keep-index flag to avoid adding staged files in stash entry
+
+
+### Removing commits from github
+
+>  https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github
