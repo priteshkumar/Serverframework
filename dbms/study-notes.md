@@ -32,3 +32,14 @@ Properties of transaction:
 ### jdbc url format
 
 `jdbc:<kind of the database>://<where the database is hosted>/<database name>`
+
+
+### Disadvantage of using jdbc
+
+> Supports only native SQL , portability issues with different dbms
+
+> Tight coupling between java code and SQL
+
+> Hardcoding of column name/datatype in queries
+
+> addition/modification of database tables is cumbersome
