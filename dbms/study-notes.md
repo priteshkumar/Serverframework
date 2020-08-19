@@ -1,5 +1,22 @@
 ## Study notes on DBMS
 
-> MAVEN dependency can haveone of  6 scopes:
+> Transaction : logical unit of work ( set of sql queries executed as atomic unit)
+
+Properties of transaction:
+> ATOMIC
+
+> CONSISTENT : data in database adheres to constraints/set rules before/after transaction
+
+> ISOLATED 
+
+> DURABLE : committed work is not lost , fault tolerant
+
+
+
+
+> MAVEN dependency can have one of  6 scopes:
 
 `compile, test, runtime,import,provided,system`
+
+
+> 
