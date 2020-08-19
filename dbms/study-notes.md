@@ -43,3 +43,12 @@ Properties of transaction:
 > Hardcoding of column name/datatype in queries
 
 > addition/modification of database tables is cumbersome
+
+
+### Advantages Of ORM
+
+> ORM automatically maps the object model of the application with the corresponding relational data model of the database.
+
+> The abstraction of mapping between the object model and the database using ORMs helps to migrate from one database to another database.  
+
+> It avoids the requirement of writing native SQL.
