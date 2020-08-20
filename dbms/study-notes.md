@@ -68,3 +68,20 @@ Properties of transaction:
 > @Table annotation is used to specify database table name mappped to corresponding entity
 
 > @Transient annotation is used make a class field non persisted 
+
+
+**Entity state changes**
+
+> merge: Merge the state of the given entity into the current persistence context (detached -> persisted)
+
+> persist : transient -> persisted/managed
+
+> remove : remove from persistence context/as well as db
+
+> find/getRef/queries : brings into managed/persisted state
+
+
+
+### Persistence Context
+
+(persistence context) https://www.baeldung.com/jpa-hibernate-persistence-context
