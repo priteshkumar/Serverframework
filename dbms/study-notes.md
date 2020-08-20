@@ -52,3 +52,19 @@ Properties of transaction:
 > The abstraction of mapping between the object model and the database using ORMs helps to migrate from one database to another database.  
 
 > It avoids the requirement of writing native SQL.
+
+
+
+### JPA Info
+
+**Entity**
+
+> Entity :  java pojo annotated with @Entity to be persisted in database
+
+> entity class cannot be declared final
+
+> entity class must have a no arg constructor and a primary key
+
+> @Table annotation is used to specify database table name mappped to corresponding entity
+
+> @Transient annotation is used make a class field non persisted 
