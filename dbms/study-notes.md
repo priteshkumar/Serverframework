@@ -85,3 +85,20 @@ Properties of transaction:
 ### Persistence Context
 
 (persistence context) https://www.baeldung.com/jpa-hibernate-persistence-context
+
+
+### hibernate properties
+
+ > hibernate.hbm2ddl.auto : exports ddl schema into database when entitymanager factory is created
+ 
+ > it has 4 values:
+ 
+ 1)create
+ 
+ 2)update
+ 
+ 3)validate
+ 
+ 4)create-drop
+ 
+ 
