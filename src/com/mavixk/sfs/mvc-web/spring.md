@@ -19,4 +19,5 @@
 
 > Users get there unique session identifiers to differentiate between clients/users.
 
+> Spring automatically passes the session object to the thymeleaf template just like the Model object. e.g. ${session.loggeduser.profile.fullName}
 
