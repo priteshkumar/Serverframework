@@ -147,3 +147,20 @@ Properties of transaction:
 
 `private List<Category> categories = new ArrayList<>();`
 
+
+**OneToOne**
+
+> Use below in parent User class to define onetoone relationship
+
+> In OneToOne association , any side can hold the foreign key
+
+> In below code User class has attribute profile which acts as foreign key to user_profile table
+
+> Here User class is parent entity and UserProfile is child entity
+
+`@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)`
+
+`@JoinColumn(name = "profile_id")`
+
+`private UserProfile profile;`
+
