@@ -102,3 +102,30 @@ Properties of transaction:
  4)create-drop
  
  
+ ### Entity Relationships
+ 
+ **OneToMany/@ManyToOne**
+ 
+ > Use below on One side or parent side:
+ 
+`OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)`
+
+`private List<Post> posts = new ArrayList<>();`
+ 
+
+> Use below on many side
+ 
+ `@ManyToOne(fetch = FetchType.EAGER)`
+ 
+ `@JoinColumn(name = "user_id")`
+ 
+ `private User user`
+ 
+ 
+ > mappedBy value informs hibernate that there is user attribute on Many side which establishes OneToMany association
+ 
+ > it also means User is parent class.
+ 
+ > The ‘user’ attribute in the Post class behaves as a foreign key and references the ‘id’ column in the User class
+ 
+ > Above is example of bidirectional relationship
