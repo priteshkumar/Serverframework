@@ -129,3 +129,21 @@ Properties of transaction:
  > The ‘user’ attribute in the Post class behaves as a foreign key and references the ‘id’ column in the User class
  
  > Above is example of bidirectional relationship
+ 
+ 
+ 
+ **ManyToMany** 
+ 
+ > Use below on owning/parent side of relationship
+ 
+ `@ManyToMany(mappedBy = "categories", fetch = FetchType.LAZY)`
+ 
+  `private List<Post> posts = new ArrayList<>();`
+
+
+> Use below on other side 
+
+`@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)`
+
+`private List<Category> categories = new ArrayList<>();`
+
