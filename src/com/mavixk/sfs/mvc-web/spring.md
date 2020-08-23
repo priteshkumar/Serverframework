@@ -30,9 +30,25 @@
 > The configuration metadata is represented in XML, Java annotations, or Java code.
 
 >  ApplicationContext is the interface for an advanced factory capable of maintaining a registry of different beans and their dependencies.
+  
+  
+ ### Bean Scopes
+ 
+ > ApplicationContext ioc container maintains a registry of BeanDefinition instances.
+ 
+ > BeanDefinition is a recipe for bean instantiation
+ 
+ > It has fully qualified actual class of the bean, dependencies, configuration (scope , lifecycle callbacks etc)
 
->  
-
+ > Bean scopes are of below types:
+ 
+ - SingleTon
+ - Prototype
+ - Request
+ - Session
+ - Application
+ - Websocket
+ 
 
 
 
