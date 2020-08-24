@@ -66,6 +66,25 @@
 
 
 
+### Spring Boot 
+
+> Different ways of component scan in springboot
+
+> Specify multiple scan paths as below:
+
+`@ComponentScan(basePackages = {`
+
+`        "com.springframework.blog.componentscan.example.demopackageA",`
+
+`        "com.springframework.blog.componentscan.example.demopackageD",`
+
+`        "com.springframework.blog.componentscan.example.demopackageE"`
+    `},`
+    
+`  basePackageClasses = DemoBeanB1.class)`
+
+
+
 
 ### HTTP info
 
