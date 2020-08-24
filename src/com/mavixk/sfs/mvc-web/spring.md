@@ -68,6 +68,17 @@
 
 ### Spring Boot 
 
+> @SpringBootApplication enables below 3 annotations:
+
+- @EnableAutoConfiguration
+
+- @Configuration
+
+- @ComponentScan
+
+
+> @ComponentScan along with @Configuration enables component scanning in current package path/subpackages
+
 > Different ways of component scan in springboot
 
 > Specify multiple scan paths as below:
