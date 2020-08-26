@@ -22,6 +22,10 @@ class SystemLog {
 
 public class SysLogTest{
   public static void main(String[] args){
+    //java runtime class is singleton
+    Runtime runtime = Runtime.getRuntime();
+
+    System.out.println(runtime.availableProcessors());
     SystemLog syslog = SystemLog.getSysLog();
     syslog.writeLog("jenkins build complete...");
     syslog = SystemLog.getSysLog();

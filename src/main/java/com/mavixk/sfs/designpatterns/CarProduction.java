@@ -1,4 +1,4 @@
-package com.mavixk.sfs;
+package com.mavixk.sfs.designpatterns;
 
 public class CarProduction {
   static interface Builder{

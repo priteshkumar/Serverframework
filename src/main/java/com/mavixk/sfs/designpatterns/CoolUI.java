@@ -1,4 +1,4 @@
-package com.mavixk.sfs;
+package com.mavixk.sfs.designpatterns;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
