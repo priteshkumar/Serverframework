@@ -1,4 +1,4 @@
-package com.mavixk.sfs;
+package com.mavixk.sfs.designpatterns;
 
 class SystemLog {
   private static SystemLog sysLog;
