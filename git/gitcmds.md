@@ -11,11 +11,16 @@
  `git status` : show unstaged/staged changes
  
  
-### git push cmd
+### git push/pull cmd
+` git push origin src:dst` : pushes local src ref to remote dst ref
+
+`git push origin dst`: pushes local same ref to dst ref .e.g.  git push origin master (pushes from local master to remote master)
 
 `git push origin --delete <branch>` : deletes branch on remote repo
 
 `git push origin :branch` : do deletion as above 
+
+`git pull origin <branch>` : pulls remote branch changes into local current branch
 
 
 ### Git log cmd
