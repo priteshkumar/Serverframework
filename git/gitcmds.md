@@ -10,6 +10,12 @@
  
  `git status` : show unstaged/staged changes
  
+ 
+### git push cmd
+
+`git push origin --delete <branch>` : deletes branch on remote repo
+
+`git push origin :branch` : do deletion as above 
 
 
 ### Git log cmd
