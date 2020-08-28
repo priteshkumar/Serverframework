@@ -1,5 +1,17 @@
 ## Git command reference
 
+### Git status cmd
+
+ `git rm --cached <file>` : unstage <file> from staging area/index to untracked file. this is used on newly added/staged files.
+ 
+ `git reset HEAD <file>` : unstage changes made in tracked <file>. changes are preserved in working directory
+ 
+ `git checkout -- <file>` : discard changes made in tracked file in working directory. use this when its not staged/indexed.
+ 
+ `git status` : show unstaged/staged changes
+ 
+
+
 ### Git log cmd
 `git log -n`: lists last n commits from HEAD
 
