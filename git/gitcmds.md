@@ -85,3 +85,26 @@ Refer git object model [Git Object Model](https://thoughtbot.com/upcase/videos/g
 ### Removing commits from github
 
 >  https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github
+
+
+
+### git tag cmd
+
+> tags are refs to specific points in git history
+
+> annotated tags are used for public release as they have extra metadata 
+
+- tagger name 
+
+- email of tagger
+
+- date
+
+- tag commit message
+
+
+`git tag <tag-name>` : creates a lightweight tag
+
+
+`git tag -a <tag-name>` : creates annotated tag. they are stored as objects in git database.
+
