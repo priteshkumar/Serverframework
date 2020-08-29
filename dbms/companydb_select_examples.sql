@@ -240,6 +240,13 @@ where salary >= (select avg(salary) from employee);
 
 -- 30. Which project(s) have the least number of employees?
 
+select p.pname  
+from works_on w inner join project p on w.pno = p.pnumber
+group by p.pname
+having count(*) = (select min(mycount)
+			from (select count(*) as mycount
+			      from works_on
+			      group by pno) as mytable)
 
 
 
@@ -384,6 +391,16 @@ having count(ssn) = (select min(mycount) from mytable)
 
 -- 37. What is the name of the department whose employees have the highest
 --     average salary?
+	select d.dname from 
+	department d inner join employee e on d.dnumber = e.dno
+	group by d.dname
+	having avg(e.salary) = (select max(mysal)
+	                        from (select avg(salary) as mysal
+	                              from employee 
+	                              group by dno) as mytable)
+
+
+
 	with salarystats as (
 	select avg(salary) as "avgsalary" 
 	from employee
