@@ -43,8 +43,7 @@ public class MusicFactory {
   }
 
   public static void main(String[] args) {
-    IMusic music = getMusic("rock");
+    IMusic music = MusicFactory.getMusic("rock");
     music.playMusic();
   }
-
 }
